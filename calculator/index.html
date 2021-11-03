@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <script type="text/javascript" src="controller.js"></script>
+    <script type="text/javascript" src="calculator.js"></script>
+    <link rel="stylesheet" type="text/css" href="calculator.css" />
+  </head>
+  <body>
+    <div class="centerCalc">
+      <form class="column" id="inputForm">
+        <div class="columnChild">
+          <label for="fNumber">Enter First Number</label> <br />
+          <input type="text" name="fNumber" id="fNumber" />
+        </div>
+        <div class="columnChild">
+          <label for="sNumber">Enter Second Number</label> <br />
+          <input type="text" name="sNumber" id="sNumber" />
+        </div>
+      </form>
+      <br />
+      <form id="radioForm">
+        <input type="radio" id="Add" name="mathOperation" value="Add" />
+        <label for="Add">Add</label>
+        <input
+          type="radio"
+          id="Subtract"
+          name="mathOperation"
+          value="Subtract"
+        />
+        <label for="Subtract">Subtract</label>
+        <input
+          type="radio"
+          id="Multiply"
+          name="mathOperation"
+          value="Multiply"
+        />
+        <label for="Multiply">Multiply</label>
+        <input type="radio" id="Divide" name="mathOperation" value="Divide" />
+        <label for="Divide">Divide</label>
+        <br />
+        <input type="button" value="=" id="Submit" onclick="calculate()" />
+        <input type="button" value="Clear" id="Clear" onclick="clearValues()" />
+      </form>
+      <p id="output"></p>
+    </div>
+  </body>
+</html>
