@@ -1,0 +1,13 @@
+/* fill in styling here */
+.centerCalc {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  transform: translate(-50%);
+}
+.column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
